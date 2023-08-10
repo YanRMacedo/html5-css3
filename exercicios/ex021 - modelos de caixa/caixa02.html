@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: aquamarine;
+            margin: 0px;
+        }
+
+        header {
+            background-color: antiquewhite;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .titulo {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+            text-align: center;
+            background-color: lightpink;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 30px;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+
+        main {
+            background-color: bisque;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        article>aside {
+            background-color: lightpink;
+            border: 5px;
+            border-radius: 5px;
+            text-align: right;
+            font-size: 13px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        nav {
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.486);
+        }
+
+        nav>a {
+            text-decoration: none;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        nav>a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: black;
+            color: aliceblue;
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        footer>a {
+            text-decoration: none;
+            padding: 5px;
+            font-weight: bold;
+            color: aliceblue;
+        }
+
+        footer>a:hover {
+            color: aqua;
+            text-decoration: underline;
+        }
+
+        footer>a::after {
+            content: " <=";
+        }
+
+        footer>a::before {
+            content: "=> ";
+        }
+
+        footer>p {
+            text-align: center;
+        }
+
+        aside>p {
+            text-align: right;
+        }
+
+        a:active {
+            color: brown;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Fotos</a>
+            <a href="#">Vídeos</a>
+            <a href="#">Contato</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="fotos">
+
+            <h1 class="titulo">Obras do meu Manito Bracito </h1>
+
+            <h1>Fotos</h1>
+
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero iste, cumque placeat esse hic
+                    perferendis vero est at atque molestiae eaque nemo quod facere possimus magnam repudiandae aut
+                    eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quia eum exercitationem
+                    consequatur dignissimos illo officiis inventore accusantium! Nisi eligendi quo accusantium officia
+                    culpa obcaecati eum eaque consequatur harum? Fugiat? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Ullam, repellat nesciunt exercitationem ad dolor doloribus officiis excepturi
+                    saepe sapiente sit beatae necessitatibus veniam expedita! Tempore tenetur modi rerum quis dolor!
+                </p>
+
+                <aside>
+                    <p>Por Yan Macedo</p>
+                </aside>
+
+            </article>
+        </section>
+
+        <section id="videos">
+
+            <h1>Vídeos</h1>
+
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit libero iste, cumque placeat esse hic
+                    perferendis vero est at atque molestiae eaque nemo quod facere possimus magnam repudiandae aut
+                    eveniet? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quia eum exercitationem
+                    consequatur dignissimos illo officiis inventore accusantium! Nisi eligendi quo accusantium officia
+                    culpa obcaecati eum eaque consequatur harum? Fugiat? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Ullam, repellat nesciunt exercitationem ad dolor doloribus officiis excepturi
+                    saepe sapiente sit beatae necessitatibus veniam expedita! Tempore tenetur modi rerum quis dolor!
+                </p>
+
+                <aside>
+                    <p>Por Yan Macedo</p>
+                </aside>
+
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por mim</p>
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Gmail</a>
+    </footer>
+</body>
+
+</html>

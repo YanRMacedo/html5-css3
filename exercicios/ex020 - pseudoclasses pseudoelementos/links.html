@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        a {
+            color: red;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blueviolet;
+        }
+
+        a:active {
+            color: darkred;
+        }
+
+        a:hover {
+            color: aquamarine;
+            text-decoration: underline;
+        }
+
+        .principal::after {
+            content: " <=";
+        }
+
+        .principal::before {
+            content: "=> ";
+        }
+
+        a::before {
+            content: "=> ";
+        }
+
+        a::after {
+            content: " <=";
+        }
+    </style>
+
+    <title>personalizando links</title>
+</head>
+
+<body>
+    <ul>
+        <li><a href="https://twitter.com/ymacedoffc" target="_blank" class="principal"> twitter </a></li>
+        <li><a href="https://www.instagram.com/yanmacedo09/" target="_blank" > instagram </a></li>
+        <li><a href="https://www.facebook.com/yanmacedo09/" target="_blank"> facebook </a></li>
+    </ul>
+</body>
+
+</html>
