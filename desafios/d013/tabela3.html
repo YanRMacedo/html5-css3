@@ -35,12 +35,20 @@
         }
 
         .aula {
-            font-size: 1em; 
+            color: white;
+            background-color: rgb(99, 99, 99);
+            font-size: 1.5em;
             text-align: left;
         }
 
-        #aula1 {
-            text-align: center;
+        .aula1 {
+            background-color:rgb(99, 99, 99);
+            color: white;
+        }
+
+        .aula2 {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
@@ -51,7 +59,7 @@
         <thead>
             <th scope="col" rowspan="2">Área</th>
             <th scope="col" rowspan="2">Disciplina</th>
-            <th scope="col" colspan="2">Notas</th>
+            <th scope="colgroup" colspan="2">Notas</th>
             <th scope="col" rowspan="2">Média</th>
 
             <tr>
@@ -62,7 +70,7 @@
 
         <tbody>
             <tr>
-                <td scope="row" rowspan="4">Exatas</td>
+                <th class="aula2" scope="rowgroup" rowspan="4">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -86,19 +94,12 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-        </tbody>
-        <tfoot>
             <tr>
-                <td class="aula" colspan="4">Média de Exatas</td>
-                <td id="aula1" class="aula">0.0</td>
+                <th class="aula" scope="row" colspan="4">Média de Exatas</th>
+                <td class="aula1">0.0</td>
             </tr>
-        </tfoot>
-    </table>
-
-    <table>
-        <tbody>
             <tr>
-                <td scope="row" rowspan="2">Humanas</td>
+                <th class="aula2" scope="rowgroup" rowspan="2">Humanas</th>
                 <td>História</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -110,15 +111,14 @@
                 <td>0.0</td>
                 <td>0.0</td>
             </tr>
-        
+            <tr>
+                <th class="aula" scope="row" colspan="4">Média de Humanas</th>
+                <td class="aula1">0.0</td>
+            </tr>
         </tbody>
-        <tfoot>
-            <td class="aula" colspan="4">Média de Humanas</td>
-            <td id="aula1" class="aula">0.0</td>
-        </tfoot>
     </table>
 
-    
+
 </body>
 
 </html>
