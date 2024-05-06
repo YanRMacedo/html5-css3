@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
         <p>
             <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="10" autocomplete="username" placeholder="Nome completo">
+            <input type="text" name="nome" id="inome" required maxlength="10" autocomplete="username"
+                placeholder="Nome completo">
         </p>
         <p>
             <label for="imedia">Média:</label>
@@ -33,9 +36,30 @@
             <input type="color" name="cor" id="icor">
         </p>
         <p>
+            <label for="iemail">E-mail:</label>
+            <input type="email" name="email" id="iemail" placeholder="E-mail">
+        </p>
+        <p>
+            <label for="iprocura">Procurar:</label>
+            <input type="search" name="procurar" id="iprocura" placeholder="Barra de pesquisa">
+        </p>
+        <p>
+            <label for="icelular">Celular:</label>
+            <input type="tel" name="celular" id="icelular" value="+55 (21)">
+        </p>
+        <p>
+            <label for="iimagem">Imagem:</label>
+            <input type="image" src="klipartz.com.png" alt="iimagem">
+        </p>
+        <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
+        <p>
+            <label for="iaceito">Aceito:</label>
+            <input type="checkbox" name="aceito" id="iaceito" checked>
+        </p>
     </form>
 </body>
+
 </html>
