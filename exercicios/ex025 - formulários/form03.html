@@ -49,7 +49,7 @@
         </p>
         <p>
             <label for="icelular">Celular:</label>
-            <input type="tel" name="celular" id="icelular" value="+55 (21)">
+            <input type="tel" name="celular" id="icelular" value="+55 (21)" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
         </p>
         <p>
             <label for="iimagem">Imagem:</label>
@@ -64,6 +64,24 @@
             <input type="checkbox" name="aceito" id="iaceito" checked>
         </p>
     </form>
+    <fieldset>
+        <legend>Esportes Favoritos</legend>
+        <input type="checkbox" name="esbas" id="espbas"> <label for="espbas">Basquete</label> <br>
+        <input type="checkbox" name="esfut" id="espfut"> <label for="espfut">Futebol</label> <br>
+        <input type="checkbox" name="esten" id="espten"> <label for="espten">Tênis</label> <br>
+        <input type="checkbox" name="esnt" id="espnt"> <label for="espnt">Natação</label> <br>
+    </fieldset>
+    <fieldset>
+        <legend>Nacionalidade</legend>
+        <input type="radio" name="nacional" id="brasil"> <label for="brasil">Brasil</label> <br>
+        <input type="radio" name="nacional" id="argentina"> <label for="argentina">Argentina</label> <br>
+        <input type="radio" name="nacional" id="colombia"> <label for="colombia">Colômbia</label>
+    </fieldset>
+    <fieldset>
+        <legend>Sexo</legend>
+        <input type="radio" name="sexo" id="sexm" value="M"> <label for="sexm">Masculino</label> <br>
+        <input type="radio" name="sexo" id="sexf" value="F"> <label for="sexf">Feminino</label>
+    </fieldset>
 </body>
 
 </html>
