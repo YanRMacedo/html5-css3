@@ -11,27 +11,30 @@
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="get" autocomplete="on">
           <!--estudar sobre RegEX-->
-        <p>
-            <label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome" required maxlength="10" autocomplete="username"
-                placeholder="Nome completo">
-        </p>
-        <p>
-            <label for="imedia">Média:</label>
-            <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
-        </p>
-        <p>
-            <label for="imes">Período Letivo:</label>
-            <input type="month" name="mes" id="imes" value="2012-05">
-        </p>
-        <p>
-            <label for="idata">Data da Prova:</label>
-            <input type="date" name="data" id="idata" value="2012-12-04">
-        </p>
-        <p>
-            <label for="ihora">Hora:</label>
-            <input type="time" name="hora" id="ihora">
-        </p>
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="10" autocomplete="username"
+                    placeholder="Nome completo">
+            </p>
+            <p>
+                <label for="imedia">Média:</label>
+                <input type="number" name="media" id="imedia" min="0" max="10" placeholder="0 a 10" step="0.1">
+            </p>
+            <p>
+                <label for="imes">Período Letivo:</label>
+                <input type="month" name="mes" id="imes" value="2012-05">
+            </p>
+            <p>
+                <label for="idata">Data da Prova:</label>
+                <input type="date" name="data" id="idata" value="2012-12-04">
+            </p>
+            <p>
+                <label for="ihora">Hora:</label>
+                <input type="time" name="hora" id="ihora">
+            </p>
+        </fieldset>
         <p>
             <label for="icor">Cores:</label>
             <input type="color" name="cor" id="icor">
