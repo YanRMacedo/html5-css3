@@ -9,7 +9,7 @@
 
 <body>
     <h1>Teste de Formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
           <!--estudar sobre RegEX-->
         <fieldset>
             <legend>Dados Pessoais</legend>
@@ -37,7 +37,15 @@
         </fieldset>
         <p>
             <label for="icor">Cores:</label>
-            <input type="color" name="cor" id="icor">
+            <input type="color" name="cor" id="icor" value="#00ff00"> <!-- valor tem que ser em hexadecimal -->
+        </p>
+        <p>
+            <label for="inivel">Nível de satisfação</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="5">
+        </p>
+        <p>
+            <label for="ifoto">Foto</label>
+            <input type="file" name="foto" id="ifoto">
         </p>
         <p>
             <label for="iemail">E-mail:</label>
@@ -53,7 +61,7 @@
         </p>
         <p>
             <label for="iimagem">Imagem:</label>
-            <input type="image" src="klipartz.com.png" alt="iimagem">
+            <input type="image" src="klipartz.com.png" alt="imagem">
         </p>
         <p>
             <input type="submit" value="Enviar">
